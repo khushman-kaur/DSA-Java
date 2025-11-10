@@ -64,22 +64,23 @@ class SinglyLinkedListDemo
 	}
 }
 
-class Node{
-    int val;
-    Node next;
-    
-    public Node(int val,Node next){
-        this.val=val;
-        this.next=next;
-    }
-    
-    public Node(int val){
-        this.val=val;
-        this.next=null;
-    }
-}
+
 
  class SinglyLinkedList{
+    private class Node{
+        int val;
+        Node next;
+        
+        public Node(int val,Node next){
+            this.val=val;
+            this.next=next;
+        }
+        
+        public Node(int val){
+            this.val=val;
+            this.next=null;
+        }
+    }
     Node head;
     
     void addFirst(int val){
